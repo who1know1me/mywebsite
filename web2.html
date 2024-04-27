@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="registration-form">
+        <h2>注册</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="birthplace">出生地:</label>
+                <select id="birthplace" name="birthplace">
+                    <option value="china">中国</option>
+                    <option value="korea">韩国</option>
+                    <option value="usa">美国</option>
+                    <option value="japan">日本</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="dob">出生日期:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="inline-group">
+                <label>爱好:</label>
+                <div class="hobby-checkbox">
+                    <input type="checkbox" id="playing" name="hobby" value="playing">
+                    <label for="playing">打球</label>
+                </div>
+                <div class="hobby-checkbox">
+                    <input type="checkbox" id="swimming" name="hobby" value="swimming">
+                    <label for="swimming">游泳</label>
+                </div>
+                <div class="hobby-checkbox">
+                    <input type="checkbox" id="reading" name="hobby" value="reading">
+                    <label for="reading">阅读</label>
+                </div>
+            </div>
+            <div class="inline-group">
+                <label>性别:</label>
+                <div class="gender-radio">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">男</label>
+                </div>
+                <div class="gender-radio">
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">女</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="personality">个性签名:</label>
+                <textarea id="personality" name="personality" placeholder="个性签名..."></textarea>
+            </div>
+            <button type="submit">提交</button>
+            <button type="button" onclick="resetForm()">重置</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
